@@ -1,17 +1,21 @@
 # Async
+是从 muyizixiu/Async fork 过来的, fix几个小bug
+https://github.com/muyizixiu/Async
+
+
 php 异步任务库
 一个快速响应的web应用必然有很多繁重的异步任务去做，Async利用pnctl_fork创建异步进程，同时管理异步任务。
 
 ## Install
 ```
-composer install yizixiumu/async
+composer install sanderswang/async
 ```
 
 ## Usage
 类
 ```
 Async
-public __construct(string $redis_host, string $redis_user, string $redis_password, string $log)
+public __construct(string $redis_host, string $redis_port, string $redis_password, string $log)
 /**
  * 创建一个任务
  * @param Closure $task 闭包，这个闭包为异步的任务进程内容
@@ -34,7 +38,7 @@ public sendData(string $task_name, mixed $task_data)
 ```
 普通异步任务
 ```
-use Async;
+use Async/Async;
 $redis_host = "localhost:6379";
 $redis_user = "async";
 $redis_password = "";

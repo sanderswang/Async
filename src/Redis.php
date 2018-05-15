@@ -17,14 +17,14 @@ class Redis{
     public function connect(){
         $this->redis->connect($this->host,$this->port);
         if(!empty($this->passwd)){
-            $this->redis->auth($passwd);
+            $this->redis->auth($this->passwd);
         }
     }
 
     public function pconnect(){
         $this->redis->pconnect($this->host,$this->port);
         if(!empty($this->passwd)){
-            $this->redis->auth($passwd);
+            $this->redis->auth($this->passwd);
         }
     }
 

@@ -1,10 +1,10 @@
 {
-    "name": "yizixiumu/async",
+    "name": "sanderswang/async",
     "type": "library",
     "authors": [
         {
-            "name": "muyizixiu",
-            "email": "muyizixiu@outlook.com"
+            "name": "sanderswang",
+            "email": "sanderswang@gmail.com"
         }
     ],
     "require": {},

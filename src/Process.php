@@ -37,8 +37,11 @@ class Process{
 		//重定向错误输出
 		ini_set('error_log',$this->log);
 		//关闭标准输入和错误
-		fclose(STDIN);
-        fclose(STDERR);
+        if (defined('STDIN')){
+            fclose(STDIN);
+            fclose(STDERR);
+        }
+
 
 		$log = $this->log;
 		//重定向标准输出
