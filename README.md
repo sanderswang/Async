@@ -1,3 +1,13 @@
+# Notice
+if in **WEB server** and want to do something  **async**
+ pls consider **fastcgi_finish_request()**
+
+
+
+#
+
+
+
 # Async
 fork from  ```muyizixiu/Async```  , (fix small bugs)
 
@@ -15,8 +25,6 @@ detai: https://github.com/muyizixiu/Async
 composer install sanderswang/async
 ```
 
-## notice
-
 
 
 ## Usage 
@@ -33,6 +41,7 @@ $async->task(function($data){
 do once, and then exit
 
 
+####
 
 #### domain and queue task: 
 
